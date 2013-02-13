@@ -3,7 +3,7 @@ SilverStripe Minify CSS Module
 
 This module creates a subclass of UploadField that allows for sorting the managed files.
 
-Also changes the upload interface, heavily inspired by the more complete Gallery module (https://github.com/frankmullenger/silverstripe-gallery).
+Also changes the upload interface which is heavily inspired by the more complete but use-specific Gallery module (https://github.com/frankmullenger/silverstripe-gallery).
 
 Still in development.
 
@@ -43,7 +43,6 @@ class SlideshowImage extends Image {
 		'Page' => 'Page'
 	);
 }
-
 ```
 
 You can change the name of the sort attribute with $sortableField->setSortField('SortOrderOrWhatever');
