@@ -1,0 +1,104 @@
+.sortableupload .middleColumn {
+	width: 100%;
+	background: none;
+	border: none;
+	
+	clear: left;
+  margin-left: 0;
+	
+}
+
+.ss-uploadfield-item.ui-sortable-helper {
+	background:#FFFFFF !important;
+	opacity:0.75;
+}
+
+
+.sortableupload .ss-uploadfield-item .ss-uploadfield-item-preview.ss-uploadfield-dropzone {
+	background: none repeat scroll 0 0 #D4DBE0;
+	border: 2px dashed gray;
+	border-radius: 13px 13px 13px 13px;
+	box-shadow: 0 0 4px 0 rgba(128, 128, 128, 0.4) inset, 0 1px 0 #FAFAFA;
+	display: block;
+	float: left;
+	height: 82px;
+	width: 360px;
+}
+	.sortableupload .ss-uploadfield-dropzone div {
+		background: url("../../framework/images/upload.png") no-repeat scroll 0 25px transparent;
+		color: #5E5E5E;
+		display: block;
+		font-size: 25px;
+		font-weight: bold;
+		line-height: 25px;
+		margin: 0 auto;
+		padding: 20px 0 0;
+		text-align: center;
+		text-shadow: 0 1px 0 #FFFFFF;
+		width: 230px;
+		z-index: 1;
+	}
+	.sortableupload .ss-uploadfield-addfile .ss-uploadfield-dropzone div span {
+		display: block;
+		font-size: 14px;
+		z-index: -1;
+	}
+	.sortableupload .ss-uploadfield-addfile .ss-uploadfield-dropzone.active.hover { 
+		-webkit-box-shadow: rgba(255, 255, 255, 0.6) 0 0 3px 2px inset; 
+		-moz-box-shadow: rgba(255, 255, 255, 0.6) 0 0 3px 2px inset; 
+		box-shadow: rgba(255, 255, 255, 0.6) 0 0 3px 2px inset; 
+	}
+
+
+
+	.sortableupload .ss-uploadfield-addfile .ss-uploadfield-item-name {
+		font-size: 16px;
+	}
+	.sortableupload .ss-uploadfield-addfile .ss-uploadfield-item-info {
+		margin:15px 0 0 380px;
+	}
+
+.sortableupload .ss-uploadfield-item-uploador {
+	display: none;
+	float: left;
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 70px;
+	margin-top: 7px;
+	padding: 0 20px;
+}
+
+
+.sortableupload .ss-ui-button {
+	margin: 0 10px 10px 0;
+}
+
+
+/*
+	borderTop now gives a bottom border since I moved the upload fields to the top
+*/
+.sortableupload .ss-uploadfield-addfile.borderTop {
+	border-top: none;
+	border-bottom: 1px solid #b3b3b3;
+}
+
+
+
+.sortableupload .ss-uploadfield-files {
+	overflow-x:hidden;
+}
+.sortableupload .ss-uploadfield-files .ss-uploadfield-item {
+	background:#ffffff;
+	
+	border: 1px solid #b3b3b3;
+	border-top: none;
+}
+	.sortableupload .ss-uploadfield-files .ss-uploadfield-item:last-child, .ss-uploadfield .ss-uploadfield-files .ss-uploadfield-item.ui-state-error:last-child {
+		border-bottom: 1px solid #b3b3b3;
+	}
+
+
+.sortableupload .ss-uploadfield-files .thinking .ss-uploadfield-item-actions {
+	opacity:0.5;
+}
+
