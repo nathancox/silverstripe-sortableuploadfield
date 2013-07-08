@@ -55,7 +55,9 @@
 		font-size: 16px;
 	}
 	.sortableupload .ss-uploadfield-addfile .ss-uploadfield-item-info {
-		margin:15px 0 0 380px;
+	/*	margin:15px 0 0 380px;*/
+		margin:15px 0 0 15px;
+	
 	}
 
 .sortableupload .ss-uploadfield-item-uploador {
