@@ -1,4 +1,4 @@
-SilverStripe Minify CSS Module
+SilverStripe Sortable Upload Field Module
 =============
 
 This module creates a subclass of UploadField that allows for sorting the managed files.
