@@ -2,6 +2,8 @@
 
 class SortableUploadField extends UploadField {
 	private $sortField = 'Sort';
+
+	static $allowed_actions = array( 'savesort' );
 	
 	/*
 		include js

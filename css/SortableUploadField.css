@@ -4,7 +4,7 @@
 	border: none;
 	
 	clear: left;
-  margin-left: 0;
+  	margin-left: 0;
 	
 }
 
@@ -21,18 +21,18 @@
 	box-shadow: 0 0 4px 0 rgba(128, 128, 128, 0.4) inset, 0 1px 0 #FAFAFA;
 	display: block;
 	float: left;
-	height: 82px;
-	width: 360px;
+	height: 62px;
+	width: 260px;
 }
 	.sortableupload .ss-uploadfield-dropzone div {
-		background: url("../../framework/images/upload.png") no-repeat scroll 0 25px transparent;
+		background: url("../../framework/images/upload.png") no-repeat scroll 0 center transparent;
 		color: #5E5E5E;
 		display: block;
-		font-size: 25px;
+		font-size: 20px;
 		font-weight: bold;
 		line-height: 25px;
-		margin: 0 auto;
-		padding: 20px 0 0;
+		margin: 5px auto;
+		padding: 0;
 		text-align: center;
 		text-shadow: 0 1px 0 #FFFFFF;
 		width: 230px;
@@ -52,11 +52,11 @@
 
 
 	.sortableupload .ss-uploadfield-addfile .ss-uploadfield-item-name {
-		font-size: 16px;
+		padding-top:5px;
 	}
 	.sortableupload .ss-uploadfield-addfile .ss-uploadfield-item-info {
 	/*	margin:15px 0 0 380px;*/
-		margin:15px 0 0 15px;
+		margin:0px 0 0 15px;
 	
 	}
 
