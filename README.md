@@ -78,7 +78,7 @@ This will produce
 ![example sortableuploadfield](http://static.flyingmonkey.co.nz/github/silverstripe-sortableuploadfield/sortableuploadfield-1.png)
 
 
-You can change the name of the sort attribute with $sortableField->setSortField('SortOrderOrWhatever');
+You can change the name of the sort attribute with `$sortableField->setSortField('SortOrderOrWhatever');`
 
 
 Known Issues
