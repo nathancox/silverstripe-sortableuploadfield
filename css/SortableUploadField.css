@@ -2,10 +2,10 @@
 	width: 100%;
 	background: none;
 	border: none;
-	
+
 	clear: left;
   	margin-left: 0;
-	
+
 }
 
 .ss-uploadfield-item.ui-sortable-helper {
@@ -43,10 +43,10 @@
 		font-size: 14px;
 		z-index: -1;
 	}
-	.sortableupload .ss-uploadfield-addfile .ss-uploadfield-dropzone.active.hover { 
-		-webkit-box-shadow: rgba(255, 255, 255, 0.6) 0 0 3px 2px inset; 
-		-moz-box-shadow: rgba(255, 255, 255, 0.6) 0 0 3px 2px inset; 
-		box-shadow: rgba(255, 255, 255, 0.6) 0 0 3px 2px inset; 
+	.sortableupload .ss-uploadfield-addfile .ss-uploadfield-dropzone.active.hover {
+		-webkit-box-shadow: rgba(255, 255, 255, 0.6) 0 0 3px 2px inset;
+		-moz-box-shadow: rgba(255, 255, 255, 0.6) 0 0 3px 2px inset;
+		box-shadow: rgba(255, 255, 255, 0.6) 0 0 3px 2px inset;
 	}
 
 
@@ -57,7 +57,7 @@
 	.sortableupload .ss-uploadfield-addfile .ss-uploadfield-item-info {
 	/*	margin:15px 0 0 380px;*/
 		margin:0px 0 0 15px;
-	
+
 	}
 
 .sortableupload .ss-uploadfield-item-uploador {
@@ -91,7 +91,8 @@
 }
 .sortableupload .ss-uploadfield-files .ss-uploadfield-item {
 	background:#ffffff;
-	
+	position:relative;
+
 	border: 1px solid #b3b3b3;
 	border-top: none;
 }
@@ -102,5 +103,26 @@
 
 .sortableupload .ss-uploadfield-files .thinking .ss-uploadfield-item-actions {
 	opacity:0.5;
+}
+
+
+
+.sortable-uploadfield-drag-handle {
+	position:absolute;
+	left:0;
+	top:50%;
+
+	height:15px;
+	width:12px;
+
+	background-image:url('../../framework/admin/images/sitetree_ss_default_icons.png');
+	background-position:-60px -19px;
+
+    cursor: move;
+
+    margin-top:-15px;
+}
+.sortable-uploadfield-drag-handle + .sortable-uploadfield-drag-handle {
+	margin-top:0px;
 }
 

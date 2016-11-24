@@ -1,6 +1,6 @@
 (function($) {
 	$.entwine('sortableupload', function($) {
-	
+
 		$('div.ss-uploadfield.ss-sortableuploadfield').entwine({
 
 			List: null,
@@ -48,7 +48,7 @@
 			},
 
 			saveSortOrder: function(editedItem) {
-				
+
 				var children = $(this).getList().children();
 				var items = {};
 				var i;
@@ -65,7 +65,7 @@
 
 				$.post(
 					config.sorturl,
-					{ 
+					{
 						'items': items,
 						'SecurityID': securityID
 					},
@@ -84,22 +84,31 @@
 					list.css('min-height', 'auto');
 					var setHeight = list.height();
 				}
-				
+
 				list.css('min-height', setHeight);
 			}
-			
+
+		});
+
+		// add drag handles
+		$('div.ss-uploadfield.ss-sortableuploadfield .template-download').entwine({
+			onmatch: function() {
+				this.append("<span class='sortable-uploadfield-drag-handle'></span><span class='sortable-uploadfield-drag-handle'></span>");
+			}
 		});
 
 	});
-	
 
-$.widget("fm.sortableupload", $.ui.sortable, {
-	_mouseStart: function(event, overrideHandle, noActivation) {
-		$(this.element).closest('.ss-sortableuploadfield').entwine('sortableupload').storeSize();
-		$.ui.sortable.prototype._mouseStart.call(this, event, overrideHandle, noActivation);
-		return true;
-	}
-});
+
+
+
+	$.widget("fm.sortableupload", $.ui.sortable, {
+		_mouseStart: function(event, overrideHandle, noActivation) {
+			$(this.element).closest('.ss-sortableuploadfield').entwine('sortableupload').storeSize();
+			$.ui.sortable.prototype._mouseStart.call(this, event, overrideHandle, noActivation);
+			return true;
+		}
+	});
 
 
 }(jQuery));
