@@ -1,0 +1,22 @@
+{
+	"name": "nathancox/sortableuploadfield",
+	"description": "A subclass of UploadField that allows for sorting the managed files.",
+	"keywords": [
+		"silverstripe",
+		"uploadfield",
+		"cms",
+		"files"
+	],
+	"type": "silverstripe-module",
+	"require": {
+		"silverstripe/cms": "^3.0.0",
+	},
+	"license": "BSD-3-Clause",
+	"authors": [
+		{
+			"name": "Nathan Cox",
+			"email": "me@nathan.net.nz"
+		}
+	],
+	"prefer-stable": true
+}
