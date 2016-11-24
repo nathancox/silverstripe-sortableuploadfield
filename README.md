@@ -22,8 +22,15 @@ SilverStripe 3.0+
 Installation Instructions
 -------------------------
 
-1. Place the files in a directory called "sortableuploadfield" in the root of your SilverStripe installation
-2. Visit yoursite.com/dev/build
+Via composer:
+
+```
+composer require nathancox/sortableuploadfield
+```
+
+Or manually download the module and place it in a folder in your site root.
+
+Visit yoursite.com/dev/build
 
 
 Usage
@@ -44,6 +51,32 @@ class SlideshowImage extends Image {
 	);
 }
 ```
+
+And in the page:
+
+```php
+	...
+
+	private static $has_many = array(
+		'Slides' => 'SlideshowImage'
+	);
+
+	public function getCMSFields() {
+		$fields = parent::getCMSFields();
+
+		$fields->addFieldToTab('Root.Slides', $field = SortableUploadField::create('Slides', 'Slides'));
+
+		return $fields;
+	}
+
+	...
+
+```
+
+This will produce
+
+![example sortableuploadfield](http://static.flyingmonkey.co.nz/github/silverstripe-sortableuploadfield/sortableuploadfield-1.png)
+
 
 You can change the name of the sort attribute with $sortableField->setSortField('SortOrderOrWhatever');
 
